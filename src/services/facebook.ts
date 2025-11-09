@@ -13,6 +13,9 @@ export const scrapeFacebook = async (profileUrl: string): Promise<string> => {
     // 2. Or use a scraping service (with proper legal compliance)
     // 3. Or ask user to provide content manually
     
+    // profileUrl will be used when backend implementation is added
+    console.log('Facebook scraping requested for:', profileUrl)
+    
     throw new Error(
       'Facebook scraping requires backend implementation with OAuth authentication. ' +
       'Please use Facebook Graph API or provide content manually.'

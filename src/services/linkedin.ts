@@ -13,6 +13,9 @@ export const scrapeLinkedIn = async (profileUrl: string): Promise<string> => {
     // 2. Or use a scraping service (with proper legal compliance)
     // 3. Or ask user to provide content manually
     
+    // profileUrl will be used when backend implementation is added
+    console.log('LinkedIn scraping requested for:', profileUrl)
+    
     throw new Error(
       'LinkedIn scraping requires backend implementation with OAuth authentication. ' +
       'Please use LinkedIn API or provide content manually.'

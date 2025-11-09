@@ -16,6 +16,9 @@ export const scrapeInstagram = async (username: string): Promise<string> => {
     // 2. Or use a scraping service (with proper legal compliance)
     // 3. Or ask user to provide content manually
     
+    // cleanUsername will be used when backend implementation is added
+    console.log('Instagram scraping requested for:', cleanUsername)
+    
     throw new Error(
       'Instagram scraping requires backend implementation with proper authentication. ' +
       'Please use Instagram Basic Display API or provide content manually.'

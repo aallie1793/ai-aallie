@@ -16,6 +16,9 @@ export const scrapeTikTok = async (username: string): Promise<string> => {
     // 2. Or use a scraping service (with proper legal compliance)
     // 3. Or ask user to provide content manually
     
+    // cleanUsername will be used when backend implementation is added
+    console.log('TikTok scraping requested for:', cleanUsername)
+    
     throw new Error(
       'TikTok scraping requires backend implementation with proper authentication. ' +
       'Please use TikTok API or provide content manually.'
